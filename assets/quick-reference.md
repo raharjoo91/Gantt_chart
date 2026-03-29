@@ -1,30 +1,30 @@
-# Quick Reference: Google Sheets Formulas for Gantt Charts
+# Referensi Cepat: Rumus Google Sheets untuk Gantt Chart
 
-## Duration Formula
+## Rumus Durasi
 ```
-=End Date Cell - Start Date Cell
+=Sel Tanggal Selesai - Sel Tanggal Mulai
 ```
-Example: `=C2-B2`
+Contoh: `=C2-B2`
 
-## Conditional Formatting Formula (Grid Method)
+## Rumus Conditional Formatting (Metode Grid)
 ```
-=AND(Date Cell Header >= Start Date Cell, Date Cell Header <= End Date Cell)
+=AND(Sel Tanggal Header >= Sel Tanggal Mulai, Sel Tanggal Header <= Sel Tanggal Selesai)
 ```
-Example: `=AND(F$1>=$B2, F$1<=$C2)`
+Contoh: `=AND(F$1>=$B2, F$1<=$C2)`
 
-### Formula Breakdown:
-- `F$1` = The date in the header row (absolute reference for row)
-- `$B2` = The start date for this task (absolute reference for column)
-- `$C2` = The end date for this task (absolute reference for column)
-- `AND()` = Checks if the header date falls within the task date range
+### Penjelasan Rumus:
+- `F$1` = Tanggal di baris header (referensi absolut untuk baris)
+- `$B2` = Tanggal mulai untuk kegiatan ini (referensi absolut untuk kolom)
+- `$C2` = Tanggal selesai untuk kegiatan ini (referensi absolut untuk kolom)
+- `AND()` = Memeriksa apakah tanggal header berada dalam rentang tanggal kegiatan
 
-## Date Increment Formula (for timeline header)
+## Rumus Kenaikan Tanggal (untuk header timeline)
 ```
-=Previous Cell + 1
+=Sel Sebelumnya + 1
 ```
-Example: In cell G1: `=F1+1`
+Contoh: Di sel G1: `=F1+1`
 
 ## Tips
-- Use `$` to lock rows or columns when dragging formulas
-- Format dates consistently: Select cells → Format → Number → Date
-- To show weekdays only, use a more complex formula or manually skip weekends
+- Gunakan `$` untuk mengunci baris atau kolom saat menarik rumus
+- Format tanggal konsisten: Pilih sel → Format → Number → Date
+- Untuk menampilkan hanya hari kerja, gunakan rumus yang lebih kompleks atau lewati akhir pekan secara manual

@@ -1,21 +1,21 @@
-# Images Folder
+# Folder Images
 
-This folder contains screenshots for the Gantt Chart tutorial.
+Folder ini berikan screenshot untuk tutorial Gantt Chart.
 
-## Required Screenshots (to be added)
+## Screenshot yang Diperlukan (akan ditambahkan)
 
-1. `data-setup.png` - Example of properly formatted data in Google Sheets
-2. `insert-chart.png` - Insert → Chart menu
-3. `chart-type.png` - Selecting Stacked Bar Chart
-4. **series-start-date.png** - Formatting Start Date series (white/invisible)
-5. **series-duration.png** - Formatting Duration series (colored)
-6. **reverse-axis.png** - Reversing the vertical axis
-7. **final-gantt.png** - Completed Gantt Chart
-8. **conditional-formatting.png** - Conditional formatting dialog
-9. **grid-method-result.png** - Grid-based timeline result
+1. `data-setup.png` - Contoh data yang diformat dengan benar di Google Sheets
+2. `insert-chart.png` - Menu Insert → Chart
+3. `chart-type.png` - Memilih Stacked Bar Chart
+4. `series-start-date.png` - Memformat series Start Date (putih/tidak terlihat)
+5. `series-duration.png` - Memformat series Duration (berwarna)
+6. `reverse-axis.png` - Membalik sumbu vertikal
+7. `final-gantt.png` - Gantt Chart yang sudah selesai
+8. `conditional-formatting.png` - Dialog conditional formatting
+9. `grid-method-result.png` - Hasil timeline metode grid
 
-## Image Standards
-- Crop to relevant action area
-- Use clear, readable font size
-- Provide alt-text for accessibility
-- Recommended size: 800-1200px width
+## Standar Gambar
+- Potong ke area tindakan yang relevan
+- Gunakan ukuran font yang jelas dan mudah dibaca
+- Sediakan teks alt untuk aksesibilitas
+- Ukuran yang disarankan: 800-1200px lebar
