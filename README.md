@@ -6,7 +6,9 @@
 Mahasiswa S1 Kesehatan Masyarakat
 
 ## yang Akan Anda Pelajari
-Membuat Gantt Chart di Google Sheets untuk memvisualisasikan jadwal proyek program kesehatan masyarakat. Panduan ini menggunakan dua contoh program yang berbeda:
+Membuat Gantt Chart di Google Sheets menggunakan metode **Conditional Formatting (Grid)**. Metode ini bekerja dengan baik di Google Sheets dan mudah disesuaikan.
+
+Panduan ini menggunakan dua contoh program yang berbeda:
 1. **Program Skrining TB** di Sekolah
 2. **Program Edukasi Gizi** untuk Pencegahan Stunting
 
@@ -16,32 +18,24 @@ Membuat Gantt Chart di Google Sheets untuk memvisualisasikan jadwal proyek progr
 
 Program skrining Tuberkulosis (TB) di lingkungan sekolah untuk deteksi dini dan penanganan kasus TB.
 
-## Struktur Program
-
-| Fase | Deskripsi |
-|------|-----------|
-| **Perencanaan** | Asesmen kebutuhan, koordinasi dengan sekolah, persiapan alat |
-| **Pelaksanaan** | Skrining siswa, pemeriksaan tenaga kesehatan, rujukan kasus |
-| **Evaluasi** | Analisis data, laporan hasil, perencanaan tindak lanjut |
-
 ## Data Contoh: Program Skrining TB
 
-| | A | B | C | D |
-|---|---|---|---|---|
-| **1** | Nama Kegiatan | Tanggal Mulai | Tanggal Selesai | Durasi (Hari) |
-| **2** | Pertemuan dengan Kepala Sekolah | 2025-04-01 | 2025-04-01 | `=C2-B2` |
-| **3** | Surat Izin Orang Tua | 2025-04-02 | 2025-04-05 | `=C3-B3` |
-| **4** | Rekrutmen Petugas Kesehatan | 2025-04-03 | 2025-04-08 | `=C4-B4` |
-| **5** | Pelatihan Petugas Skrining | 2025-04-06 | 2025-04-10 | `=C5-B5` |
-| **6** | Persiapan Alat Skrining | 2025-04-09 | 2025-04-12 | `=C6-B6` |
-| **7** | Skrining TB Hari 1 - Kelas X | 2025-04-13 | 2025-04-13 | `=C7-B7` |
-| **8** | Skrining TB Hari 2 - Kelas XI | 2025-04-14 | 2025-04-14 | `=C8-B8` |
-| **9** | Skrining TB Hari 3 - Kelas XII | 2025-04-15 | 2025-04-15 | `=C9-B9` |
-| **10** | Pemeriksaan Dokter untuk Kasus Suspek | 2025-04-16 | 2025-04-18 | `=C10-B10` |
-| **11** | Konseling Siswa Positif TB | 2025-04-19 | 2025-04-20 | `=C11-B11` |
-| **12** | Koordinasi dengan Puskesmas | 2025-04-21 | 2025-04-22 | `=C12-B12` |
-| **13** | Entry Data & Analisis Hasil | 2025-04-23 | 2025-04-28 | `=C13-B13` |
-| **14** | Laporan ke Dinas Kesehatan | 2025-04-29 | 2025-04-30 | `=C14-B14` |
+| | A | B | C |
+|---|---|---|---|
+| **1** | Nama Kegiatan | Tanggal Mulai | Tanggal Selesai |
+| **2** | Pertemuan dengan Kepala Sekolah | 2025-04-01 | 2025-04-01 |
+| **3** | Surat Izin Orang Tua | 2025-04-02 | 2025-04-05 |
+| **4** | Rekrutmen Petugas Kesehatan | 2025-04-03 | 2025-04-08 |
+| **5** | Pelatihan Petugas Skrining | 2025-04-06 | 2025-04-10 |
+| **6** | Persiapan Alat Skrining | 2025-04-09 | 2025-04-12 |
+| **7** | Skrining TB Hari 1 - Kelas X | 2025-04-13 | 2025-04-13 |
+| **8** | Skrining TB Hari 2 - Kelas XI | 2025-04-14 | 2025-04-14 |
+| **9** | Skrining TB Hari 3 - Kelas XII | 2025-04-15 | 2025-04-15 |
+| **10** | Pemeriksaan Dokter untuk Kasus Suspek | 2025-04-16 | 2025-04-18 |
+| **11** | Konseling Siswa Positif TB | 2025-04-19 | 2025-04-20 |
+| **12** | Koordinasi dengan Puskesmas | 2025-04-21 | 2025-04-22 |
+| **13** | Entry Data & Analisis Hasil | 2025-04-23 | 2025-04-28 |
+| **14** | Laporan ke Dinas Kesehatan | 2025-04-29 | 2025-04-30 |
 
 ---
 
@@ -49,139 +43,170 @@ Program skrining Tuberkulosis (TB) di lingkungan sekolah untuk deteksi dini dan 
 
 Program edukasi gizi bagi orang tua siswa untuk pencegahan stunting pada anak.
 
-## Struktur Program
-
-| Fase | Deskripsi |
-|------|-----------|
-| **Perencanaan** | Survey status gizi, penyusunan materi, koordinasi dengan ahli gizi |
-| **Pelaksanaan** | Edukasi orang tua, demo memasak bergizi, monitoring makanan |
-| **Evaluasi** | Evaluasi pengetahuan, monitoring berat badan, laporan |
-
 ## Data Contoh: Program Edukasi Gizi
 
-| | A | B | C | D |
-|---|---|---|---|---|
-| **1** | Nama Kegiatan | Tanggal Mulai | Tanggal Selesai | Durasi (Hari) |
-| **2** | Survey Awal Status Gizi Siswa | 2025-05-01 | 2025-05-05 | `=C2-B2` |
-| **3** | Koordinasi dengan Ahli Gizi | 2025-05-03 | 2025-05-04 | `=C3-B3` |
-| **4** | Penyusunan Materi Edukasi | 2025-05-05 | 2025-05-10 | `=C4-B4` |
-| **5** | Undangan Orang Tua Siswa | 2025-05-08 | 2025-05-12 | `=C5-B5` |
-| **6** | Persiapan Bahan Demo Memasak | 2025-05-11 | 2025-05-14 | `=C6-B6` |
-| **7** | Sesi Edukasi 1: Gizi Seimbang | 2025-05-15 | 2025-05-15 | `=C7-B7` |
-| **8** | Sesi Edukasi 2: Makanan Lokal Bergizi | 2025-05-16 | 2025-05-16 | `=C8-B8` |
-| **9** | Demo Memasak Sayur & Protein | 2025-05-17 | 2025-05-17 | `=C9-B9` |
-| **10** | Praktek Menu Sehat di Rumah | 2025-05-18 | 2025-05-24 | `=C10-B10` |
-| **11** | Pengukuran Berat Badan Siswa | 2025-05-25 | 2025-05-26 | `=C11-B11` |
-| **12** | Evaluasi Pengetahuan Orang Tua | 2025-05-27 | 2025-05-27 | `=C12-B12` |
-| **13** | Analisis Data Perubahan Gizi | 2025-05-28 | 2025-06-03 | `=C13-B13` |
-| **14** | Laporan & Rekomendasi Program | 2025-06-04 | 2025-06-07 | `=C14-B14` |
+| | A | B | C |
+|---|---|---|---|
+| **1** | Nama Kegiatan | Tanggal Mulai | Tanggal Selesai |
+| **2** | Survey Awal Status Gizi Siswa | 2025-05-01 | 2025-05-05 |
+| **3** | Koordinasi dengan Ahli Gizi | 2025-05-03 | 2025-05-04 |
+| **4** | Penyusunan Materi Edukasi | 2025-05-05 | 2025-05-10 |
+| **5** | Undangan Orang Tua Siswa | 2025-05-08 | 2025-05-12 |
+| **6** | Persiapan Bahan Demo Memasak | 2025-05-11 | 2025-05-14 |
+| **7** | Sesi Edukasi 1: Gizi Seimbang | 2025-05-15 | 2025-05-15 |
+| **8** | Sesi Edukasi 2: Makanan Lokal Bergizi | 2025-05-16 | 2025-05-16 |
+| **9** | Demo Memasak Sayur & Protein | 2025-05-17 | 2025-05-17 |
+| **10** | Praktek Menu Sehat di Rumah | 2025-05-18 | 2025-05-24 |
+| **11** | Pengukuran Berat Badan Siswa | 2025-05-25 | 2025-05-26 |
+| **12** | Evaluasi Pengetahuan Orang Tua | 2025-05-27 | 2025-05-27 |
+| **13** | Analisis Data Perubahan Gizi | 2025-05-28 | 2025-06-03 |
+| **14** | Laporan & Rekomendasi Program | 2025-06-04 | 2025-06-07 |
 
 ---
 
-# Metode 1: Stacked Bar Chart (Disarankan untuk Visualisasi)
+# TUTORIAL: Membuat Gantt Chart dengan Conditional Formatting
 
 ## Langkah 1: Siapkan Data Anda
 
-Buat Google Sheet dengan kolom persis seperti contoh di atas:
+Buat Google Sheet dengan 3 kolom:
 
-- **Kolom A**: Nama Kegiatan
-- **Kolom B**: Tanggal Mulai
-- **Kolom C**: Tanggal Selesai
-- **Kolom D**: Durasi (Hari) dengan rumus `=C2-B2`
+| | A | B | C |
+|---|---|---|---|
+| **1** | Nama Kegiatan | Tanggal Mulai | Tanggal Selesai |
 
-## Langkah 2: Buat Grafik
+**PENTING:** Format kolom B dan C sebagai tanggal:
+1. Pilih sel B2 dan C2 ke bawah
+2. Klik **Format** → **Number** → **Date**
 
-1. **Pilih data Anda**: Blokir kolom A, B, dan D (Nama Kegiatan, Tanggal Mulai, Durasi)
-   - **Jangan sertakan** kolom Tanggal Selesai
+## Langkah 2: Buat Header Timeline
 
-2. **Sisipkan grafik**:
-   - Klik **Insert** → **Chart**
-   - Atau gunakan toolbar: Klik **ikon Chart**
+1. Di sel **E1**, masukkan tanggal mulai proyek Anda (contoh: `2025-04-01`)
 
-3. **Atur tipe grafik**:
-   - Di Chart Editor, tab **Setup**
-   - Ubah **Chart type** menjadi **Stacked bar chart**
+2. Di sel **F1**, masukkan rumus: `=E1+1`
 
-## Langkah 3: Konfigurasi Series
+3. Tarik sel F1 ke kanan sampai tanggal akhir proyek
 
-1. Buka tab **Customize** di Chart Editor
+   *Tip: Anda akan melihat tanggal berurutan (1 Apr, 2 Apr, 3 Apr, dst.)*
 
-2. Klik dropdown **Series**
+**Contoh hasil:**
+| | E | F | G | H | I | ... |
+|---|---|---|---|---|---|---|
+| **1** | 01/04/2025 | 02/04/2025 | 03/04/2025 | 04/04/2025 | 05/04/2025 | ... |
 
-3. **Untuk series "Tanggal Mulai"** (buat tidak terlihat):
-   - Pilih **Start Date** dari dropdown
-   - Set **Fill color** ke **White** (atau transparan)
-   - Set **Line opacity** ke **0%**
+## Langkah 3: Tambahkan Rumus Pengecekan
 
-4. **Untuk series "Durasi"** (bar yang terlihat):
-   - Pilih **Duration** dari dropdown
-   - Set **Fill color** dengan warna terlihat (misalnya biru atau hijau)
-   - Tambahkan **Border color** jika diinginkan
+Untuk setiap baris kegiatan, kita akan menambahkan rumus yang mengecek apakah tanggal tersebut falls dalam rentang kegiatan.
 
-## Langkah 4: Balik Sumbu Vertikal
-
-1. Di tab **Customize**, klik **Vertical axis**
-
-2. Centang kotak: **Reverse axis order**
-
-Ini memastikan Kegiatan 1 muncul di bagian atas (bukan bawah).
-
-## Langkah 5: Format Sumbu Horizontal (Timeline)
-
-1. Di tab **Customize**, klik **Horizontal axis**
-
-2. Sesuaikan format tanggal:
-   - Pilih format yang mudah dibaca (misalnya "1 Apr" atau "Apr 1")
-
----
-
-# Metode 2: Conditional Formatting (Timeline Berbasis Grid)
-
-## Langkah 1: Buat Header Timeline
-
-1. Di sel **F1**, masukkan tanggal mulai: `2025-04-01`
-
-2. Di sel **G1**, masukkan: `=F1+1`
-
-3. Tarik G1 ke kanan untuk membuat tanggal harian melalui tanggal akhir proyek
-
-## Langkah 2: Tambahkan Rumus
-
-Untuk setiap baris kegiatan (mulai dari baris 2), gunakan rumus ini di sel F2:
+1. Di sel **E2**, masukkan rumus ini:
 
 ```
-=AND(F$1>=$B2, F$1<=$C2)
+=AND(E$1>=$B2, E$1<=$C2)
 ```
 
-Lalu tarik rumus ini:
-- **Ke kanan** melalui semua kolom tanggal
-- **Ke bawah** untuk semua baris kegiatan
+2. Tarik rumus ini:
+   - **Ke kanan** ke semua kolom tanggal
+   - **Ke bawah** untuk semua kegiatan
 
-## Langkah 3: Terapkan Conditional Formatting
+**Penjelasan Rumus:**
+- `E$1` = Tanggal di header (dengan `$` untuk mengunci baris)
+- `$B2` = Tanggal mulai kegiatan ini (dengan `$` untuk mengunci kolom)
+- `$C2` = Tanggal selesai kegiatan ini
+- `AND()` = Memeriksa apakah tanggal header ADA dalam rentang tanggal kegiatan
 
-1. Pilih seluruh grid (dari F2 ke kolom tanggal terakhir untuk semua kegiatan)
+Hasilnya akan menampilkan **TRUE** (jika tanggal aktif) atau **FALSE** (jika tidak aktif).
+
+## Langkah 4: Terapkan Conditional Formatting
+
+Sekarang kita akan membuat sel berubah warna berdasarkan hasil rumus.
+
+1. **Pilih seluruh area grid**
+   - Mulai dari E2
+   - Pilih sampai kolom tanggal terakhir
+   - Pilih sampai baris kegiatan terakhir
 
 2. Klik **Format** → **Conditional formatting**
 
-3. Atur aturan:
-   - **Format cells if**: **Is true**
-   - **Value or formula**: `=AND(F$1>=$B2, F$1<=$C2)`
-   - **Formatting style**: Pilih warna isi (misalnya hijau)
+3. Di panel Conditional format rules:
+   - Klik **+ Add another rule**
 
-4. Klik **Done**
+4. Atur rule seperti ini:
+   - **Format cells if**: pilih **Is true**
+   - **Value or formula**: `=AND(E$1>=$B2, E$1<=$C2)`
+   - **Formatting style**: Klik ikon warna isi, pilih warna (misalnya hijau atau biru)
+
+5. Klik **Done**
+
+## Langkah 5: Format Tampilan (Opsional tapi Disarankan)
+
+### Menghilangkan teks TRUE/FALSE:
+1. Pilih seluruh grid (E2 sampai akhir)
+2. Klik **Format** → **Number** → **Custom date and time**
+3. Hapus format dan biarkan kosong, atau atur warna teks sama dengan warna background
+
+### Menambahkan garis grid:
+1. Pilih seluruh area
+2. Klik ikon **Borders** (garis kotak)
+3. Pilih **All borders**
+
+### Mengatur lebar kolom:
+1. Pilih semua kolom tanggal
+2. Klik kanan → **Resize column** → **Fit to data**
 
 ---
 
-# Checklist Hasil Akhir
+# HASIL AKHIR
 
-Setelah membuat Gantt Chart, verifikasi:
+Setelah selesai, Anda akan memiliki:
 
-- [ ] Sumbu vertikal menampilkan daftar kegiatan dengan urutan benar (Kegiatan 1 di atas)
-- [ ] Bar "Tanggal Mulai" tidak terlihat/putih (Metode 1)
-- [ ] Durasi kegiatan akurat sesuai data
-- [ ] Ketergantungan kegiatan divisualisasikan dengan benar (tumpang tindih atau berurutan)
-- [ ] Grafik menunjukkan tiga fase dengan jelas: Perencanaan, Pelaksanaan, Evaluasi
-- [ ] Tanggal mudah dibaca dan format benar
+- **Kolom A-C**: Data kegiatan
+- **Kolom E ke kanan**: Timeline visual dengan warna
+- Setiap baris menunjukkan kapan kegiatan tersebut aktif
+- Mudah melihat tumpang tindih antar kegiatan
+
+---
+
+# Checklist Verifikasi
+
+Setelah membuat Gantt Chart, periksa:
+
+- [ ] Semua kolom tanggal (B dan C) diformat sebagai **Date**
+- [ ] Header timeline (baris 1) menunjukkan tanggal berurutan
+- [ ] Rumus `=AND(E$1>=$B2, E$1<=$C2)` diterapkan ke seluruh grid
+- [ ] Conditional formatting diatur dengan **Is true**
+- [ ] Warna muncul pada tanggal yang benar
+- [ ] Tidak ada teks TRUE/FALSE yang terlihat
+- [ ] Garis grid memudahkan pembacaan
+
+---
+
+# Tips Tambahan
+
+## Gunakan Warna Berbeda untuk Fase Berbeda
+
+Untuk membedakan fase, Anda bisa menambahkan aturan conditional formatting tambahan:
+
+1. Tambahkan kolom **Fase** di kolom D:
+   - **Perencanaan**
+   - **Pelaksanaan**
+   - **Evaluasi**
+
+2. Buat aturan conditional formatting untuk setiap fase dengan warna berbeda:
+   - Perencanaan: Biru
+   - Pelaksanaan: Hijau
+   - Evaluasi: Oranye
+
+## Menandai Hari Libur
+
+1. Tambahkan baris baru di atas header (misalnya baris 1, pindahkan header ke baris 2)
+2. Di baris 1, tandai hari libur dengan teks "Libur"
+3. Gunakan conditional formatting untuk memberi warna merah pada hari libur
+
+## Mencetak dalam Ukuran Kertas
+
+1. Klik **File** → **Page setup**
+2. Pilih orientasi **Landscape**
+3. Atur skala ke **Fit to width**
+4. Klik **File** → **Print**
 
 ---
 
@@ -193,33 +218,6 @@ Setelah membuat Gantt Chart, verifikasi:
 | **Studi Kohort** | Penyusunan protokol, persetujuan etik, rekrutmen, pengumpulan data dasar, kunjungan tindak lanjut, analisis data |
 | **Seminar Kesehatan** | Pemilihan topik, undangan pembicara, booking venue, promosi, pelaksanaan acara, pengumpulan feedback |
 | **Respon KLB** | Investigasi kasus, tracing kontak, tindakan karantina, edukasi masyarakat, monitoring & evaluasi |
-
----
-
-# Template & Sumber Daya
-
-### Template Siap Pakai
-- [Template Google Sheets TeamGantt](https://teamgantt.com/google-sheets-gantt-chart-template)
-- [Template Pelacakan Proyek Unito](https://unito.io/blog/google-sheets-gantt-chart/)
-
-### Catatan Penting
-Meskipun template membantu, pastikan Anda memahami:
-- Cara kerja rumus durasi (`=Tanggal Selesai - Tanggal Mulai`)
-- Cara mengatur aturan conditional formatting
-- Cara menyesuaikan grafik untuk timeline proyek yang berbeda
-
----
-
-# Tips untuk Mahasiswa Kesehatan Masyarakat
-
-1. **Pecah kegiatan** menjadi tugas-tugas spesifik dan terukur
-2. **Sertakan waktu buffer** untuk keterlambatan tak terduga
-3. **Gunakan kode warna** untuk membedakan:
-   - Fase Perencanaan (misalnya biru)
-   - Fase Pelaksanaan (misalnya hijau)
-   - Fase Evaluasi (misalnya oranye)
-4. **Pertimbangkan ketergantungan** - tugas mana yang harus selesai sebelum tugas lain dimulai?
-5. **Bagikan Gantt Chart** Anda dengan anggota tim untuk perencanaan kolaboratif
 
 ---
 
